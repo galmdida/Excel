@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galm Dida</title>
+    <link rel="stylesheet" href="/shared.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="/courses.css">
+    <link rel="stylesheet" href="data-prep.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <a href="index.html" id="logo">Galm Dida</a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/about.html">About</a>
+                </li>
+                <li>
+                    <a href="/blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="/courses.html">Courses</a>
+                </li>
+                <li>
+                    <a href="/projects.html">Projects</a>
+                </li>
+                <li>
+                    <a href="/events.html">Events</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#side-drawer" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </header>
+
+
+    <aside id="side-drawer">
+        <header>
+            <a href="#" class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/about.html">About</a>
+                </li>
+                <li>
+                    <a href="/blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="/courses.html">Courses</a>
+                </li>
+                <li>
+                    <a href="/projects.html">Projects</a>
+                </li>
+                <li>
+                    <a href="/events.html">Events</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+
+    <main>
+        <section id="prep">
+            <h1>
+                Data Cleansing in Ms. Excel Webinar
+            </h1>
+            <div class="photo">
+                <img src="/img/data-cleaning-img.PNG" alt="data cleaning image">
+            </div>
+            <h2>
+                Overview
+            </h2>
+            <p>
+                A Study by Gartner estimates that 20% of all data is bad, and that bad data can have a significant negative impact on company operations. In fact, according to IBM, 2016, the yearly cost of poor quality data is $3,100,000,000,000.
+            </p>
+            
+            <p>
+                The mpact of poor quality data can be presented in the figure below.
+            </p>
+
+            <div class="photo">
+                <img src="impact-img.PNG" alt="data cleaning image">
+            </div>
+                
+            <p>
+                In this webinar, we are going to dive deep and understand dirty and clean data and
+                common
+                Ms. Excel functions and formulas applied for data cleansing.
+            </p>
+
+            <h2>
+                Why clean data?
+            </h2>
+            <p>
+                Business operations and decision-making are increasingly data-driven, as organizations look to use data
+                analytics to help improve business performance and gain competitive advantages over rivals. As a result,
+                clean data is a must for BI and data science teams, business executives, marketing managers, sales reps
+                and
+                operational workers. That's particularly true in retail, financial services, health, and other
+                data-intensive industries, but it applies to organizations across the board, both large and small.
+            </p>
+            <p>
+                If a piece of data is entered into spreadsheet or database incorrectly, or if it is repeated, or a feild
+                is
+                left blank, or data formats are Inconsistent; the result is dirty data. What might seem small can lead
+                to
+                big consequences in the long run.Imagine a payroll data that multiply an employee's working hour by two.
+                Imagine a credit score system that rate a borrower higher than they deserve. Imagine a wrong account
+                details
+                shared with an employer. Just IMAGINE the cost of dirty data.
+            </p>
+            <p>
+                Therefore, we can say that dirty data can lead to flawed business decisions, misguided strategies,
+                missed
+                opportunities and operational problems, which ultimately may increase costs and reduce revenue and
+                profits.
+                IBM estimated that data quality issues cost organizations in the U.S. a total of $3.1 trillion in 2016,
+                a
+                figure that's still widely cited.
+            </p>
+
+            <h2>
+                Characteristics of dirty data
+            </h2>
+            <p>
+                Dirty data is incomplete, incorrect, or irrelevant to the problem you're trying to solve.
+            </p>
+            <p>
+                Dirty data can be due to:
+            </p>
+            <ul>
+                <li>
+                    <strong>
+                        Typo error
+                    </strong> - This include misspellings, wrong numerical entries, leading, trailing, or double
+                    spacing,
+                    syntax errors and other typographical errors. The errors can be due to human errors during data
+                    input or
+                    data retrival from database or other software. This error can cause errors in Ms. Excel and other
+                    analysis software function. Further, incorrect data leads to inaccurate insights or decision-making
+                    based on bad information resulting in revenue loss.
+                </li>
+                <li>
+                    <strong>
+                        Inconsistent formatting
+                    </strong> - This is any data that uses different formats to represent the same thing. The common
+                    example
+                    is a currency column showing that include kenya shillings and US dollar or date column that takes US
+                    and
+                    European formats. This is caused by data inserted or stored incorrectly or errors inserted during
+                    data
+                    transfer, merging or retrival from database or different software tools. This error leads to
+                    contradictory data points leading to confusion, wrong filtering and calculation results or inability
+                    to
+                    classify or segment customers (E.g country column having USA, and US in the same column).
+                </li>
+                <li>
+                    <strong>
+                        Blank fields
+                    </strong> - This is any data that is missing in the important feild. This error is caused by
+                    improper
+                    data collection of field validations, incorrect data entry or retrival, and erroneous deletion in
+                    the
+                    process data cleaning or analysis. This error leads to decreased productivity, inaccurate insights,
+                    or
+                    inability to complete essential services.
+                </li>
+                <li>
+                    <strong>
+                        Out of range values
+                    </strong> - This is the value we can related to an outlier. The value not within the expected range.
+                    This is caused by human error during data input, inconsistent format; showing number as a
+                    percentage,
+                    fake information or mock data. This error leads to biases, inaccurate insights or decision-making
+                    based
+                    on bad information resulting in revenue loss
+                </li>
+                <li>
+                    <strong>
+                        Duplicate values
+                    </strong> - This is any data record that shows up more than once in a dataset.The error is caused by
+                    manual data entry, batch data imports, or data migration. Such an error is costly as it leads to
+                    skewed
+                    metrics or analyses, inflated or inaccurate counts or predictions, or confusion during data
+                    retrieval.
+                </li>
+                <li>
+                    <strong>
+                        Outdated data
+                    </strong> - This is any data that is old which should be replaced with newer and more accurate
+                    information. This error is caused by people changing roles or companies, or software and systems
+                    becoming obsolete or volatile data that changes quickly over time such as stock prices. This error
+                    leads
+                    to inaccurate analysis, insight and decision making.
+                </li>
+            </ul>
+
+            <h2>
+                What is data cleaning?
+            </h2>
+
+            <p>
+                Data cleaning also referred to as data cleansing or data scrubbing is the process of preparing data for
+                analysis by removing or modifying data that is incorrect, incomplete, irrelevant, duplicated, or
+                improperly
+                formatted. It involves identifying data errors and then changing, updating or removing data to correct
+                them.
+                Data cleansing improves data quality and helps provide more accurate, consistent and reliable
+                information
+                for decision-making in an organization.
+            </p>
+
+            <p>
+                Data cleansing is a key part of the overall data management process and one of the core components of
+                data
+                preparation work that readies data sets for use in business intelligence (BI) and data science
+                applications.
+                It's typically done by data quality analysts and engineers or other data management professionals. But
+                data
+                scientists, BI analysts and business users may also clean data or take part in the data cleansing
+                process
+                for their own applications.
+            </p>
+
+            <h2>
+                What are the steps in data cleaning?
+            </h2>
+            <p>
+                The scope of data cleansing work varies depending on the data set and analytics requirements. For
+                example, a
+                data scientist doing fraud detection analysis on credit card transaction data may want to retain outlier
+                values because they could be a sign of fraudulent purchases. But the data scrubbing process typically
+                includes the following actions:
+            </p>
+            <ul>
+                <li>
+                    <strong>
+                        Inspection and profiling
+                    </strong> - First, data is inspected and audited to assess its quality level and identify issues
+                    that
+                    need to be fixed. This step usually involves data profiling, which documents relationships between
+                    data
+                    elements, checks data quality and gathers statistics on data sets to help find errors, discrepancies
+                    and
+                    other problems.
+                </li>
+                <li>
+                    <strong>
+                        Cleaning
+                    </strong> - This is the heart of the cleansing process, when data errors are corrected and
+                    inconsistent,
+                    duplicate and redundant data is addressed.
+                </li>
+                <li>
+                    <strong>
+                        Verification
+                    </strong> - After the cleaning step is completed, the person or team that did the work should
+                    inspect
+                    the data again to verify its cleanliness and make sure it conforms to internal data quality rules
+                    and
+                    standards.
+                </li>
+                <li>
+                    <strong>
+                        Reporting
+                    </strong> - The results of the data cleansing work should then be reported to IT and business
+                    executives
+                    to highlight data quality trends and progress. The report could include the number of issues found
+                    and
+                    corrected, plus updated metrics on the data's quality levels.
+                </li>
+            </ul>
+
+            <h2>
+                Characteristics of clean data
+            </h2>
+            <p>
+                Clean data is complete, correct, or relevant to the problem you're trying to solve.
+            </p>
+            <p>
+                Quality data is essential for making informed decisions and driving business success. To ensure that
+                data is
+                of high quality, it should meet five key characteristics. When cleaning data before using it for
+                analysis or
+                decision making, consider the following aspects:
+            </p>
+            <ul>
+                <li>
+                    <strong>
+                        Validity
+                    </strong> - Valid data adheres to the rules and constraints set for the specific data type or field.
+                    Ensuring validity means checking that the data falls within the acceptable range of values and
+                    follows
+                    the correct format.
+                </li>
+                <li>
+                    <strong>
+                        Accuracy
+                    </strong> - Accurate data is free from errors and closely represents the true value. To ensure
+                    accuracy,
+                    data cleaning should involve identifying and correcting any incorrect or misleading information.
+                </li>
+                <li>
+                    <strong>
+                        Completeness
+                    </strong> - Complete data contains all the necessary information and does not have any missing or
+                    null
+                    values. Data cleaning should involve filling in missing values or addressing incomplete records to
+                    ensure a comprehensive dataset.
+                </li>
+                <li>
+                    <strong>
+                        Consistency
+                    </strong> - Consistent data maintains the same format, units, and terminology across the dataset.
+                    Data
+                    cleaning should involve identifying and resolving any discrepancies or inconsistencies to ensure
+                    uniformity and comparability.
+                </li>
+                <li>
+                    <strong>
+                        Uniformity
+                    </strong> - Uniform data follows a standard format, making it easier to analyze and compare. Data
+                    cleaning should involve converting data into a common format or structure, ensuring that it is
+                    consistent and easy to work with.
+                </li>
+            </ul>
+
+            <h2>
+                What are the benefits of clean data?
+            </h2>
+            <p>
+                Done well, data cleansing provides the following business and data management benefits:
+            </p>
+            <ul>
+                <li>
+                    <strong>
+                        Improved decision-making
+                    </strong> - With more accurate data, analytics applications can produce better results. That enables
+                    organizations to make more informed decisions on business strategies and operations, as well as
+                    things
+                    like patient care and government programs.
+                </li>
+                <li>
+                    <strong>
+                        More effective marketing and sales
+                    </strong> - Customer data is often wrong, inconsistent or out of date. Cleaning up the data in
+                    customer
+                    relationship management and sales systems helps improve the effectiveness of marketing campaigns and
+                    sales efforts.
+                </li>
+                <li>
+                    <strong>
+                        Better operational performance
+                    </strong> - Clean, high-quality data helps organizations avoid inventory shortages, delivery snafus
+                    and
+                    other business problems that can result in higher costs, lower revenues and damaged relationships
+                    with
+                    customers.
+                </li>
+                <li>
+                    <strong>
+                        Increased use of data
+                    </strong> - Data has become a key corporate asset, but it can't generate business value if it isn't
+                    used. By making data more trustworthy, data cleansing helps convince business managers and workers
+                    to
+                    rely on it as part of their jobs.
+                </li>
+                <li>
+                    <strong>
+                        Reduced data costs
+                    </strong> - Data cleansing stops data errors and issues from further propagating in systems and
+                    analytics applications. In the long term, that saves time and money, because IT and data management
+                    teams don't have to continue fixing the same errors in data sets.
+                </li>
+            </ul>
+            <p>
+                Data cleansing and other data quality methods are also a key part of data governance programs, which aim
+                to
+                ensure that the data in enterprise systems is consistent and gets used properly. Clean data is one of
+                the
+                hallmarks of a successful data governance initiative.
+            </p>
+
+            <h2>
+                What we will cover in this webinar?
+            </h2>
+            <p>
+                This is a four hours session in the evening this coming Friday and Saturday from 8-10PM. You will learn
+                how to identify, fix, verify and document errors in Ms. Excel. Throughout the session you will interact
+                with real world data quality issues and fix them. To register for the webinar, you are required to pay
+                certificate of participation fees, or join without certification. The registration link: <a href="https://forms.gle/Gv29BwPKdcajqfdR6">Join here</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-content">
+            <ul id="footer">
+                <h2>Important Links</h2>
+                <li class="footer">
+                    <a href="/">Home</a>
+                </li>
+                <li class="footer">
+                    <a href="services.html">Services</a>
+                </li>
+                <li class="footer">
+                    <a href="projects.html">Projects</a>
+                </li>
+                <li class="footer">
+                    <a href="services.html">About</a>
+                </li>
+            </ul>
+            <ul>
+                <h2>Social Media</h2>
+                <li>
+                    <a href=""><img src="/icons/whatsapp ico.PNG" alt="whatsapp"></a>
+                </li>
+                <li>
+                    <a href=""><img src="/icons/facebook.png" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href=""><img src="/icons/insta.png" alt="instagram"></a>
+                </li>
+            </ul>
+            <ul>
+                <h2>Contact Details</h2>
+                <li>
+                    Office: Mwalimu Hotel, Kisii
+                </li>
+                <li>
+                    Tell: +254741370493
+                </li>
+                <li>
+                    Working Hours: 9am - 4pm EAT
+                </li>
+            </ul>
+        </div>
+        <p>
+            Galm Dida &#169; 2024
+        </p>
+    </footer>
+</body>
+
+</html>
