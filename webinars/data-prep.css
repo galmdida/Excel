@@ -48,6 +48,41 @@ main h2{
     padding: 0 1rem 0 1rem;
 }
 
+.btn{
+    display: block;
+    margin-top: 1rem;
+    font-family: inherit;
+    font-size: 2rem;
+    background-color: #a8c0f3;
+    border-color: #a8c0f3;
+    border-radius: 4px;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover{
+    background-color: #82a4ec;
+}
+
+/* Make the link blink */
+.btn{
+    animation: combined-blink-animation 2s infinite, color-change 2s infinite;
+}
+
+@keyframes combined-blink-animation {
+    0%, 50%, 100% {
+        visibility: visible;
+    }
+    25%, 75% {
+        visibility: hidden;
+    }
+}
+@keyframes color-change {
+    0% { color: green; }
+    50% { color: rgb(22, 37, 175); }
+    100% { color: green; }
+}
 
 /* Responsive image */
 @media (max-width: 768px){
